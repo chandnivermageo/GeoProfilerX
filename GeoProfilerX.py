@@ -652,7 +652,7 @@ def run_geoprofilerx():
     elapsed_time = time.time() - start_time
     
     print("\n-----------------------------------")
-    print("GeoProfiler Execution Summary")
+    print("GeoProfilerX Execution Summary")
     print("-----------------------------------")
     print(f"Raster size        : {src.width} × {src.height} pixels")
     
