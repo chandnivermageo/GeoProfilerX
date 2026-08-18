@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use GeoProfilerX in your research, please cite it using these metadata."
+
+title: "GeoProfilerX: A Python Tool for Extracting Line and Swath Profiles from Projected Raster Datasets"
+
+abstract: "GeoProfilerX is an open-source Python tool for extracting line and swath profiles from projected single-band raster datasets using LineString and MultiLineString vector geometries. It is designed for topographic, geophysical, remote sensing, environmental, and other geospatial applications."
+
+authors:
+  - family-names: "Verma"
+    given-names: "Chandni"
+
+version: "1.0.0"
+date-released: "2026-08-18"
+
+type: software
+license: MIT
+
+repository-code: "https://github.com/chandnivermageo/GeoProfilerX"
+url: "https://github.com/chandnivermageo/GeoProfilerX"
+
+keywords:
+  - geospatial
+  - remote sensing
+  - GIS
+  - raster analysis
+  - raster profiling
+  - DEM
+  - InSAR
+  - geophysics
+  - Python
