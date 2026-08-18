@@ -97,10 +97,10 @@ pip install -r requirements.txt
 ### Vector
 
 - LineString or MultiLineString geometries
-- Supported formats: ESRI Shapefile (`.shp`, `.shx`, `.dbf`, `.prj`) or GeoJSON (`.geojson`, `.json`)
+- Supported formats: ESRI Shapefile (`.shp`, `.shx`, `.prj`, `.dbf`), GeoJSON (`.geojson`, `.json`), and GeoPackage (`.gpkg`)
 - Vector dataset must have a defined CRS; it is automatically reprojected to match the raster CRS if necessary
 
-> All required Shapefile components must be provided together. The `.prj` file is required for CRS detection.
+> For ESRI Shapefiles, all required components (`.shp`, `.shx`, `.prj`, `.dbf`) should be provided together. The `.prj` file is required for CRS detection.
 
 ---
 
