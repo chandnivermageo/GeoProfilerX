@@ -13,11 +13,11 @@ GeoProfilerX is an open-source Python tool for extracting **line** and **swath p
 
 GeoProfilerX is the next-generation evolution of my earlier **GeoProfiler** project.
 
-While GeoProfiler was developed specifically for extracting topographic profiles from Digital Elevation Models (DEMs), GeoProfilerX extends the concept into a general-purpose raster profiling tool capable of extracting both **line** and **swath profiles** from any **projected single-band raster dataset**, including DEMs, InSAR displacement products, gravity and magnetic anomalies, terrain derivatives, environmental rasters, vegetation indices, and other geospatial datasets.
+While GeoProfiler was developed specifically for extracting topographic profiles from Digital Elevation Models (DEMs), GeoProfilerX extends the concept into a general-purpose raster profiling tool capable of extracting both **line** and **swath profiles** from a broad range of **projected single-band raster datasets**, including DEMs, InSAR displacement products, gravity and magnetic anomalies, terrain derivatives, environmental rasters, vegetation indices, and other geospatial datasets.
 
 Compared with the original GeoProfiler, GeoProfilerX introduces:
 
-- Compatibility with any projected single-band raster
+- Compatibility with a broad range of projected single-band raster datasets
 - Improved input validation, CRS handling, and error checking
 - Publication-quality line and swath profile plots (PNG & PDF)
 - CSV export of sampled profile values with X/Y coordinates
@@ -48,17 +48,17 @@ GeoProfilerX provides a simple workflow for extracting publication-ready profile
 
 ## Supported Raster Types
 
-GeoProfilerX works with any **projected single-band raster**, including:
+GeoProfilerX works with a broad range of **projected single-band raster**, including:
 
 - Digital Elevation Models (DEM)
-- Gravity anomaly
-- Magnetic anomaly
-- InSAR displacement
+- Gravity anomaly datasets
+- Magnetic anomaly datasets
+- InSAR displacement products
 - Terrain derivatives
 - Geophysical rasters
 - Environmental and climate rasters
 - Vegetation indices (e.g., NDVI)
-- Any projected single-band raster dataset
+- Other projected single-band raster datasets
 
 ---
 
@@ -90,12 +90,15 @@ pip install -r requirements.txt
 
 - Single-band raster
 - Projected Coordinate Reference System (e.g., UTM)
-- GeoTIFF or any Rasterio-supported format
+- Supported formats: GeoTIFF (`.tif`, `.tiff`) or ERDAS IMAGINE (`.img`)
 
 ### Vector
 
 - LineString or MultiLineString geometries
-- Same CRS as raster (automatic reprojection is performed if necessary)
+- Supported formats: ESRI Shapefile (`.shp`, `.shx`, `.dbf`, `.prj`) or GeoJSON (`.geojson`, `.json`)
+- Vector dataset must have a defined CRS; it is automatically reprojected to match the raster CRS if necessary
+
+> All required Shapefile components must be provided together. The `.prj` file is required for CRS detection.
 
 ---
 
@@ -158,12 +161,12 @@ Generated outputs are automatically organized into dedicated subdirectories with
 
 ```
 GeoProfilerX/
-│
 ├── GeoProfilerX.py
 ├── GeoProfilerX.ipynb
 ├── README.md
-├── LICENSE
 ├── requirements.txt
+├── CITATION.cff
+├── LICENSE
 └── images/
 ```
 
