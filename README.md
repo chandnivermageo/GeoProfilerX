@@ -90,7 +90,9 @@ pip install -r requirements.txt
 
 - Single-band raster
 - Projected Coordinate Reference System (e.g., UTM)
-- Supported formats: GeoTIFF (`.tif`, `.tiff`) or ERDAS IMAGINE (`.img`)
+- Raster format readable by Rasterio/GDAL (e.g., `.tif`, `.img`)
+
+> The raster must contain valid georeferencing and CRS information. NoData values should be properly defined in the raster metadata when applicable.
 
 ### Vector
 
