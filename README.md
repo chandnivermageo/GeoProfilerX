@@ -48,7 +48,7 @@ GeoProfilerX provides a simple workflow for extracting publication-ready profile
 
 ## Supported Raster Types
 
-GeoProfilerX works with a broad range of **projected single-band raster**, including:
+GeoProfilerX works with a broad range of **projected single-band rasters**, including:
 
 - Digital Elevation Models (DEM)
 - Gravity anomaly datasets
@@ -89,14 +89,14 @@ pip install -r requirements.txt
 ### Raster
 
 - Single-band raster
-- Projected Coordinate Reference System (e.g., UTM)
+- Projected Coordinate Reference System (CRS) (e.g., UTM or other projected CRS with metric units)
 - Raster format readable by Rasterio/GDAL (e.g., `.tif`, `.img`)
 
 > The raster must contain valid georeferencing and CRS information. NoData values should be properly defined in the raster metadata when applicable.
 
 ### Vector
 
-- LineString or MultiLineString geometries
+- LineString or MultiLineString geometries; for MultiLineString geometries, the longest line component is used for profile extraction.
 - Supported formats: ESRI Shapefile (`.shp`, `.shx`, `.prj`, `.dbf`), GeoJSON (`.geojson`, `.json`), and GeoPackage (`.gpkg`)
 - Vector dataset must have a defined CRS; it is automatically reprojected to match the raster CRS if necessary
 
@@ -134,28 +134,25 @@ outputs/
 
 ## Example Workflow
 
-1. Specify the input raster and vector paths.
+GeoProfilerX can be used in two ways:
 
-```python
-raster_path = "sample_raster.tif"
-line_path = "profiles.shp"
-```
+### 1. Jupyter Notebook — Recommended
 
-2. Select the profile type.
+Use `GeoProfilerX.ipynb` in **Google Colab, Jupyter Notebook/JupyterLab, or VS Code**.
 
-```python
-profile_type = "line"
-```
+1. Open the notebook.
+2. Update the **User Settings** with your input data.
+3. Run the cells.
 
-or
+### 2. Python Script
 
-```python
-profile_type = "swath"
-```
+Use `GeoProfilerX.py` as a standalone Python script in **any Python environment**.
 
+1. Open `GeoProfilerX.py`.
+2. Update the **User Settings** with your input data.
 3. Run the script.
 
-Generated outputs are automatically organized into dedicated subdirectories within the outputs/ folder.
+Generated outputs are automatically organized into dedicated subdirectories within the `outputs/` folder.
 
 ---
 
@@ -202,7 +199,7 @@ GitHub: <https://github.com/chandnivermageo>
 
 ## Citation
 
-If you use GeoProfilerX in your research, please cite this repository.
+If you use GeoProfilerX in your research, please cite this tool using the citation information provided below.
 
 ```
 
