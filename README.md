@@ -2,6 +2,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22013091.svg)](https://doi.org/10.5281/zenodo.22013091)
 
 <p align="center">
   <img src="images/geoprofilerx_preview.png" width="100%">
@@ -203,6 +204,6 @@ If you use GeoProfilerX in your research, please cite this tool using the citati
 
 ```
 
-Verma, C. (2026). GeoProfilerX: A Python tool for extracting line and swath profiles from projected raster datasets. GitHub repository. https://github.com/chandnivermageo/GeoProfilerX
+Verma, C. (2026). GeoProfilerX: A Python Tool for Extracting Line and Swath Profiles from Projected Raster Datasets (Version v1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.22013091
 
 ```
