@@ -8,7 +8,7 @@
   <img src="images/geoprofilerx_preview.png" width="100%">
 </p>
 
-GeoProfilerX is an open-source Python tool for extracting **line** and **swath profiles** from **projected single-band raster datasets** using **LineString** and **MultiLineString** vector geometries. It is designed for topographic, geophysical, remote sensing, environmental, and other geospatial applications, producing publication-quality profile visualizations and GIS-ready outputs for further analysis.
+GeoProfilerX is an open-source Python tool for extracting **line** and **swath profiles** from **projected single-band raster datasets** using **LineString** and **MultiLineString** vector geometries. It is designed for topographic, geophysical, remote sensing, environmental, and other geospatial applications, combining profile extraction, analysis, publication-quality visualization, and GIS-ready outputs in a single workflow.
 
 ## Project Evolution
 
@@ -18,32 +18,32 @@ While GeoProfiler was developed specifically for extracting topographic profiles
 
 Compared with the original GeoProfiler, GeoProfilerX introduces:
 
-- Compatibility with a broad range of projected single-band raster datasets
-- Improved input validation, CRS handling, and error checking
-- Publication-quality line and swath profile plots (PNG & PDF)
-- CSV export of sampled profile values with X/Y coordinates
-- Export sampled profile points with profile attributes to ESRI Shapefile and GeoPackage formats
-- Organized output directories
-- Execution summaries and processing statistics
-
+- Compatibility with a broad range of **projected single-band raster datasets**
+- Improved **input validation, CRS handling, and error checking**
+- Export sampled profile points with profile attributes to **ESRI Shapefile and GeoPackage** formats
+  
 --- 
 
-GeoProfilerX provides a simple workflow for extracting publication-ready profiles from projected raster datasets while automatically handling common geospatial preprocessing tasks.
+GeoProfilerX provides a streamlined workflow for extracting, analyzing, and visualizing profiles from projected raster datasets while automatically handling common geospatial preprocessing tasks.
 
 ## Features
 
-- Extract **line profiles** from projected raster datasets
-- Extract **swath profiles** with user-defined swath width
-- Supports LineString and MultiLineString vector geometries
-- Automatic CRS validation and vector reprojection
-- Validates raster overlap before processing
-- Handles NoData values and optional profile smoothing
-- Publication-quality line and swath profile plots (PNG & PDF)
-- CSV export of sampled profile values with X/Y coordinates
-- Export sampled profile points to ESRI Shapefile and GeoPackage formats
-- Input data preview with raster and profile overlay
-- Organized output directories (CSV, GeoPackage, PDF, PNG, Shapefiles)
-- Execution summary with processing statistics
+- Extract **line and swath profiles** from projected single-band raster datasets
+- Generate **multiple profiles in a single workflow**
+- Maintain a **consistent visual style** across profile figures
+- Create **publication-ready profile plots** with customizable formatting
+- Export **editable vector PDF** and high-quality PNG figures
+- Export sampled profile data as **CSV**
+- Export sampled profile points to **ESRI Shapefile** and **GeoPackage**
+- Support **LineString and MultiLineString** vector geometries
+- Automatically **validate CRS and reproject vectors** when necessary
+- Handle **NoData values** and optional profile smoothing
+- Validate **raster-vector overlap** before processing
+- Generate an **input data preview** with raster and profile overlay
+- Organize outputs into dedicated directories
+- Provide an **execution summary** with processing statistics
+
+**Raster data + vector profiles → publication-ready figures.**
 
 ---
 
